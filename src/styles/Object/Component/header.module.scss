@@ -1,0 +1,17 @@
+@use '../../Foundation/variables' as *;
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $primary;
+  font-size: 3rem;
+  h1 {
+    margin: 2rem 0.6rem;
+  }
+}

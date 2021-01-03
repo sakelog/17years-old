@@ -11,22 +11,5 @@ html {
 }
 body {
   font-size: 1.8rem;
+  background: $primary-lighter;
 }
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: $primary;
-  font-size: 3rem;
-  h1 {
-    margin: 2rem 0.6rem;
-  }
-}
-/*
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2rem auto;
-}
-*/

@@ -1,3 +1,5 @@
+@use '../../Foundation/variables' as *;
+
 .main {
   display: flex;
   flex-direction: column;
@@ -16,7 +18,7 @@
   border-radius: 4px;
   padding: 1rem;
   color: #ffffff;
-  background: skyblue;
+  background: $twitter-color;
 }
 .ageLabel {
   margin-bottom: 1rem;
