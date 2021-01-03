@@ -1,0 +1,31 @@
+@use './variables' as *;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.8rem;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $primary;
+  h1 {
+    margin: 2rem 0.6rem;
+  }
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .ageLabel {
+    margin-bottom: 1rem;
+  }
+}
