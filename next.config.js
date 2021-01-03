@@ -1,12 +1,9 @@
 const path = require('path');
+const isProd = process.env.NODE_ENV === 'production';
 
 module.exports = {
-  images: {
-    loader: 'cloudinary',
-    path: 'https://res.cloudinary.com/cl1sakelog/',
-  },
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
-  assetPrefix: '/17years-old',
+  assetPrefix: isProd ? '/17years-old' : '',
 };
