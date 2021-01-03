@@ -8,5 +8,5 @@ module.exports = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
-  basePath: '/17years-old',
+  assetPrefix: '/17years-old',
 };
