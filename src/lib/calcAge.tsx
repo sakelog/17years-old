@@ -20,7 +20,7 @@ export function getAge(_17yearsbirthday: Date, now: Date): string {
 
   const ageYear = 17;
   const ageMonth = diffMonth;
-  const ageLabel = 'あなたは' + ageYear + '才' + ageMonth + 'ヶ月です';
+  const ageLabel = ageYear + '才' + ageMonth + 'ヶ月';
 
   return ageLabel;
 }

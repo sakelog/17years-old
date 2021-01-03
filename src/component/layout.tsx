@@ -2,6 +2,8 @@ import Head from 'next/head';
 import { Container } from '@material-ui/core';
 import { FiHeart } from 'react-icons/fi';
 
+import AboutApp from './aboutApp';
+
 const Layout = (props) => {
   return (
     <div>
@@ -27,6 +29,7 @@ const Layout = (props) => {
           <h1>永遠の１７才</h1>
           <FiHeart />
         </header>
+        <AboutApp />
         <main>{props.children}</main>
       </Container>
     </div>

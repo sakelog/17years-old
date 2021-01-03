@@ -1,0 +1,24 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem auto;
+}
+.disable {
+  display: none;
+}
+.able {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.twitterButton {
+  border-radius: 4px;
+  padding: 1rem;
+  color: #ffffff;
+  background: skyblue;
+}
+.ageLabel {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
