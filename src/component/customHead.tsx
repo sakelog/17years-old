@@ -10,7 +10,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','${GTM_ID}');`;
 
 const CustomHead = () => {
-  const ogpImage = SiteMeta.url + '/img/ogpimage.png';
+  const ogpImage = SiteMeta.url + './img/ogp.png';
 
   return (
     <Head>

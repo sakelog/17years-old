@@ -6,19 +6,59 @@
   align-items: center;
   margin: 4rem auto;
 }
-.disable {
-  display: none;
-}
+.disable,
 .able {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100px;
+  margin: 1rem auto;
 }
-.twitterButton {
-  border-radius: 4px;
-  padding: 1rem;
-  color: #ffffff;
-  background: $twitter-color;
+.disable {
+  .share {
+    display: none;
+  }
+}
+.able {
+  .share {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid $primary;
+    width: 100%;
+    border-radius: 4px;
+    padding: 0.6rem;
+    h2 {
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      margin: 1rem;
+      &:before,
+      &:after {
+        content: '▼';
+        color: $gray;
+        margin: 0 1rem;
+      }
+    }
+    .twitterButton {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 4px;
+      padding: 1rem;
+      color: #ffffff;
+      background: $twitter-color;
+      span {
+        margin-right: 0.4rem;
+        margin-top: 2px;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+.topImage {
+  width: 100%;
+  max-width: 124px;
+  height: auto;
 }
 .ageLabel {
   margin-bottom: 1rem;

@@ -1,4 +1,5 @@
 import { isValid, addYears, differenceInMonths } from 'date-fns';
+import publicConst from './publicConst';
 
 export function get17yearsBirthday(birthday: Date): Date {
   if (isValid(birthday)) {
@@ -16,11 +17,13 @@ export function get17yearsBirthday(birthday: Date): Date {
 }
 
 export function getAge(_17yearsbirthday: Date, now: Date): string {
+  let ageLabel: string;
+  const AGE_YEAR = 17;
+  const NOT_BIRTH = publicConst.NOT_BIRTH;
+
   const diffMonth = differenceInMonths(now, _17yearsbirthday);
 
-  const ageYear = 17;
-  const ageMonth = diffMonth;
-  const ageLabel = ageYear + '才' + ageMonth + 'ヶ月';
+  ageLabel = diffMonth < 0 ? NOT_BIRTH : AGE_YEAR + '才' + diffMonth + 'ヶ月';
 
   return ageLabel;
 }

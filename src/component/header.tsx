@@ -10,7 +10,6 @@ const Header = () => {
         <h1>永遠の１７才</h1>
         <FiHeart />
       </p>
-      <img src="./img/topImg.png" className={styles.topImage} />
     </header>
   );
 };
