@@ -74,6 +74,7 @@ const Home = () => {
                 data-size="large"
                 className={styles.twitterButton}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <span>
                   <FaTwitter />

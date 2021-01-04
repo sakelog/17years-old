@@ -1,6 +1,7 @@
 import CustomHead from './customHead';
 import Header from './header';
 import { Container } from '@material-ui/core';
+import Footer from './footer';
 
 import AboutApp from './aboutApp';
 
@@ -12,6 +13,7 @@ const Layout = (props) => {
         <Header />
         <AboutApp />
         <main>{props.children}</main>
+        <Footer />
       </Container>
     </>
   );

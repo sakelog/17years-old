@@ -1,0 +1,18 @@
+@use '../../Foundation/variables' as *;
+
+.root {
+  border-top: 2px dashed $gray;
+  margin: 2rem auto 0;
+  padding: 2rem;
+  ul {
+    position: relative;
+    li {
+      margin-bottom: 1rem;
+      position: relative;
+    }
+  }
+}
+.iconText {
+  display: inline-flex;
+  align-items: center;
+}

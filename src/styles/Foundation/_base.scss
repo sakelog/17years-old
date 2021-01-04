@@ -13,3 +13,10 @@ body {
   font-size: 1.8rem;
   background: $primary-lighter;
 }
+a {
+  color: $primary;
+  text-decoration: underline;
+  &:active {
+    color: $primary-dark;
+  }
+}
